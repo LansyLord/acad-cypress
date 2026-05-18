@@ -12,3 +12,16 @@ Funcionalidade: Logins válidos e inválidos
         Quando eu insiro o usuário e a senha correta
         E clico no botão de login
         Então eu devo ser redirecionado para a página de produtos
+
+    
+    Cenário: Login inválido - Usuário Inválido
+        Quando eu insiro o usuário "user_invalid"
+        E insiro a senha "senhaQualquer"
+        E clico no botão de login
+        Então está exibindo uma mensagem de erro
+
+    Cenário: Login inválido - Senha inválida
+        Quando eu insiro o usuário "standard_user"
+        E insiro a senha "senhaInvalida"
+        E clico no botão de login
+        Então está exibindo uma mensagem de erro
